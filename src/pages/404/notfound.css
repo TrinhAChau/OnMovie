@@ -1,0 +1,57 @@
+div.error_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(
+    to right,
+    rgba(133, 118, 255, 0.7),
+    #7bc9ff
+  );
+  border: 4px solid #ffffff;
+  padding: 50px 125px;
+  border-radius: 20% 40%;
+  color: #fefefe;
+}
+.error{
+    width:100%;
+    height:100vh;
+    position:relative;
+    background-image: linear-gradient(to left,#91d5fa,#efeaf5);
+}
+.error_container>div{
+    font-size:200px;
+    background: linear-gradient(to right, #a826c9 0%, #1C1678 100%); 
+    background-clip: text;
+    color: transparent;
+}
+
+.button_back{
+    font-size:1.2rem;
+    border:none;
+    border-radius: 30px;
+    padding:10px;
+    background-color: #ac34e3;
+    color:#fefefe;
+}
+.button_back:hover{
+    transition: background-color 0.5s ease,scale 0.15s ease;
+    background-color: #7b15ba;
+}
+.button_back:active{
+    scale:0.95;
+}
+@media (max-width: 767.9px) {
+  div.error_container {
+    padding:20px 75px;
+  }
+  .error_container>div{
+    font-size: 100px;
+  }
+  h2{
+    font-size: 18px !important;
+  }
+  .button_back{
+    font-size: 14px;
+  }
+}
